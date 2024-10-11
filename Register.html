@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+<style>
+        body {
+            font-family: initial;
+            background-image: url(image/sje.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            background-position:  center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 170px;
+            padding: 20px;
+            opacity: .8;
+            background-color: blue;
+            box-shadow: 0 0 10px rgba(247, 244, 244, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: rgb(62, 32, 32);
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            color:#000;
+            margin-left: -10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: red;
+            color: #fff;
+            margin-inline: 190px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         
+        }
+    </style>
+</head>
+<body>
+    <a href= "C:\Users\JONES\Home.html" target="_blank"><img src="download.png" alt="Homepage" height="50" , width="50"></a>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="REGISTER">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name"> 
+
+            <label for="Email">Email:</label>
+            <input type="text" id="email" name="Email" required>
+
+            <label for="Mobile No"> Number:</label>
+            <input type="text"  name="Number" >
+
+            
+
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const Nmae = document.getElementById("Name").value;
+            const MobilNo = document.getElementById("Mobile No").value;
+            const email = document.getElementById("Email").value;
+            const Password = document.getElementById("Password").value;
+
+            // Basic form validation
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            // You can add additional validation and submit the form data to a server here
+            // For this example, we'll just log the data to the console
+            console.log("Name: " + name);
+            console.log("MobileNo: " + Mobileno);
+            console.log("Email: " + email);
+            console.log("Password: " + password);
+
+            // Reset the form
+            document.getElementById("registrationForm");
+            
+            window.open("popup.html");
+        });
+    </script>
+</body>
+</html>
