@@ -29,12 +29,16 @@ header{
         transform: translateY(-100%);
     }
 }
+header nav li a{
+    text-decoration: none;
+    color: blue
+}
 nav li{
     display: inline-block;
     margin: 10px 20px;
     font-weight: 600;
 }
-li:hover{
+nav li:hover{
     color: brown;
 }
 .main{
@@ -89,8 +93,9 @@ button:hover{
     z-index: -1;
 }
 img{
-    width: 40rem;
-    animation: car 5s ease-in-out;
+    width: 30rem;
+    border-radius: 5px;
+    animation: car 3s ease-in-out;
 }
 @keyframes car{
     0%{
@@ -136,9 +141,10 @@ img{
         bottom: -5%;
         display: flex;
         justify-content: center;
+        border-radius: 8px;
     }
     img{
-        width: 30rem;
+        width: 20rem;
     }
 }
     </style>
@@ -157,13 +163,13 @@ img{
     <div class="main">
         <div class="content">
             <h1>FERRARI</h1>
-            <h3>Brand New <span>"Muscle Car"</span></h3>
+            <h3>Brand New <span>"Ferrai 458 Italia"</span></h3>
             <p>Unique in their Innovation,Technology and Driving Pleasure</p>
             <button onclick="window.location.href='Register.html';">Get Started</button>
             <button onclick="window.location.href='Cars.html';">Take a Ride</button>
         </div>
         <div class="image">
-            <img src="car.gif">
+            <img src="car-image.jpeg">
         </div>
     </div>
 </body>
